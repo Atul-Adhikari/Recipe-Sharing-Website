@@ -1,0 +1,62 @@
+.shoppinglistcontainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.backButton {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.backButton:hover {
+  background-color: #e0e0e0;
+  border-color: #bbb;
+}
+
+.shoppinglistcontainer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.shoppinglistcontainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shoppinglistcontainer li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.shoppinglistcontainer h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #555;
+}
+
+.shoppinglistcontainer ul ul {
+  padding-left: 20px;
+}
+
+.shoppinglistcontainer ul ul li {
+  font-size: 16px;
+  color: #666;
+}
+
+.shoppinglistcontainer p {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}

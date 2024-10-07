@@ -1,0 +1,83 @@
+.recipeform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+  }
+  
+  .formgroup {
+    margin-bottom: 15px;
+  }
+  
+  .formlabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .forminput,
+  .formtextarea,
+  .formfile {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .forminput:focus,
+  .formtextarea:focus {
+    border-color: #67a3d3;
+    outline: none;
+  }
+  
+  .formtextarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .formbutton {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #67a3d3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formbutton:hover {
+    background-color: #4a8cb8;
+  }
+  
+  .formfile {
+    padding: 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .recipeform {
+      padding: 15px;
+    }
+  
+    .formlabel {
+      font-size: 14px;
+    }
+  
+    .forminput,
+    .formtextarea {
+      font-size: 13px;
+    }
+  
+    .formbutton {
+      font-size: 14px;
+    }
+  }
+  

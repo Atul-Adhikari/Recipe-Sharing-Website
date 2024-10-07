@@ -1,0 +1,307 @@
+html {
+  scroll-behavior: smooth;
+}
+.recipelistcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.addrecipe {
+  font-size: 18px;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255, 166, 0, 0.586);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.recipecard {
+  width: 300px;
+  min-height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  background-color: #3333331d;
+  position: relative;
+}
+
+.recipecard:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0.22);
+}
+
+.content {
+  padding: 10px;
+}
+
+.foodimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.foodname {
+  font-size: 24px;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  gap: 8px;
+}
+
+.recipebutton {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.recipebutton:hover {
+  background-color: #e55a4f;
+}
+
+.ingredients {
+  margin-top: 15px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  );
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff6f61;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #e55a4f;
+}
+
+.ingredients h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ingredients ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+.ingredients li {
+  margin-bottom: 5px;
+}
+
+.instructions h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructions ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+.instructions li {
+  margin-bottom: 5px;
+}
+
+.instructions {
+  margin-top: 15px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  );
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff6f61;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #e55a4f;
+}
+
+.instructions h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructions p {
+  color: #555;
+}
+
+.inputbox {
+  height: 15px;
+  width: 170px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+}
+.searcharea {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  caret-color: blue;
+}
+
+.searchimage {
+  height: 35px;
+  background-color: white;
+  background: none;
+}
+.searchimage:hover {
+  cursor: pointer;
+}
+
+.favorites {
+  margin-top: 10px;
+  margin-left: 50%;
+  cursor: pointer;
+}
+
+.shareicon {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.favoritesbutton button {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ff6f61;
+  transition: color 0.3s ease;
+  color: white;
+  border: none;
+  margin-left: 10px;
+}
+
+.favoritesbutton button:hover {
+  background-color: #e55a4f;
+}
+
+.shoppingCartIcon {
+  margin-left: 10px;
+}
+
+.upperpart {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.deleteicon{
+  margin-left: 10px;
+}
+
+
+.editform {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.editform input[type="text"],
+.editform textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.editform input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.editform .previewimage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.savebutton {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.savebutton:hover {
+  background-color: #3e8e41;
+}
